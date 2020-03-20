@@ -22,11 +22,7 @@ job('maven-job-dsl') {
 		}
 		shell('''
 			echo "******************************* DEPLOYING JAR"
-<<<<<<< HEAD
 			java -jar /var/jenkins_home/workspace/Maven-job-dsl/target/my-app-1.0-SNAPSHOT.jar
-=======
-			java -jar /var/jenkins_home/workspace/maven-job-dsl/target/my-app-1.0-SNAPSHOT.jar
->>>>>>> 205d035a5221f1c34ba16fafa9f32b291031f3ab
 		      ''')
 	}
 	publishers {
