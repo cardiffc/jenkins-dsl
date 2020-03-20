@@ -1,4 +1,4 @@
-job('Maven-job-dsl') {
+job('maven-job-dsl') {
 
 	description('Maven job.created by DSL')
 
@@ -22,7 +22,7 @@ job('Maven-job-dsl') {
 		}
 		shell('''
 			echo "******************************* DEPLOYING JAR"
-			java -jar /var/jenkins_home/workspace/maven-job/target/my-app-1.0-SNAPSHOT.jar
+			java -jar /var/jenkins_home/workspace/maven-job-dsl/target/my-app-1.0-SNAPSHOT.jar
 		      ''')
 	}
 	publishers {
