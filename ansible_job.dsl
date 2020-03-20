@@ -12,7 +12,7 @@ job('Ansible-users-dsl') {
 	
 	  ansiblePlaybook('/var/jenkins_home/ansible/people.yml') {
 		inventoryPath('/var/jenkins_home/ansible/hosts')
-		colorizeOutput(true)
+		colorizedOutput(true)
 		extraVars {
 			extraVar("PEOPLE_AGE",'${AGE}',false)
 		}
