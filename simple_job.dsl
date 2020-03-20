@@ -6,4 +6,7 @@ job('Generated job - 2') {
 		choiceParam('OPTION', ['option 1 (default)', 'option 2', 'option 3'])
 		booleanParam('BOOLEAN', true) 
 	}	
+	scm {
+		git('https://github.com/jenkins-docs/simple-java-maven-app.git','master')
+	}
 }
