@@ -9,4 +9,7 @@ job('Generated job - 2') {
 	scm {
 		git('https://github.com/jenkins-docs/simple-java-maven-app.git','master')
 	}
+	steps {
+		shell('echo Hello world')
+	}
 }
